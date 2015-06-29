@@ -6,7 +6,7 @@
 ## Running the scripts
 Clone the repository on both the sender and receiver servers. 
 ```shell
-$ git clone https://
+$ git clone https://github.com/coscin/network_measurements.git
 $ cd network_measurments/
 ```
 This will be our working directory
