@@ -124,7 +124,7 @@ def formatRawData(experimentType, experimentDir):
 
 	if(not os.path.isdir(inputParentDir)):
 		print "Error: '" + inputParentDir + "' No such file or directory"
-		sys.exit(-1)
+		return
 
 	if(not os.path.isdir(outputParentDir)):
 		os.mkdir(outputParentDir)
@@ -132,7 +132,7 @@ def formatRawData(experimentType, experimentDir):
 	dirList = os.listdir(inputParentDir)
 	if(len(dirList)==0):
 		print "Error: '" + inputParentDir + "' is empty"
-		sys.exit(-1)
+		return
 
 	inputParentDir_prev = inputParentDir
 	outputParentDir_prev = outputParentDir
@@ -149,7 +149,7 @@ def formatRawData(experimentType, experimentDir):
 			fileList = os.listdir(inputParentDir)
 			if(len(fileList)==0):
 				"Error: '" + inputParentDir + "' is empty"
-				sys.exit(-1)
+				return
 
 			fileList.sort()
 
